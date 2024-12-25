@@ -45,29 +45,9 @@ int main(){
 	}
 			case 3:{int dem=0;
 			 printf("So luong so nguyen to trong mang:\n");
-                for (int i = 0; i < n; i++) {
-                   int count=0;
-                    int num = arr[i];
-                   
-                    
-                        for (int j = 2; j <= sqrt(num); j++) {
-                            if (num % j == 0) {
-								count++;  
-							 }   
-						
-
-if(count==0){	
-	int tong=0;
-for(int k=0;k<=count;k++)
-{
-
-	tong+=k;
-
-}
-dem+=tong;
-		printf("%d",dem);				}
-         }
-		}
+                for(int i=0;i<=sqrt(arr[i]);i++){
+                	if(arr[i])
+				}
 		printf("\n");
 		
 			break;
