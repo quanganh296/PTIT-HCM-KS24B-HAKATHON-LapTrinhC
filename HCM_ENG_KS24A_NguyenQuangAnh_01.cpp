@@ -110,22 +110,25 @@ dem+=tong;
 			break;
 	}
 			case 7:{
-				for (int i = 1; i < n; i++) {
-                        int key = arr[i];
-                        int j = i - 1;
-                        while (j >= 0 && arr[j] > key) {
-                            arr[j+1] = arr[j];
-                            j--;
-                        }
-                        arr[j] = key;
-                         
-                    }
-                    printf("Mang da giam dan.\n");
-                    for(int i=0;i<n;i++)
-                    {
-                    	printf("%d",arr[i]);
-					}
-					printf("\n");
+				
+				
+				for (int i=1; i<n; i++) 
+				{
+					int key=arr[i]; 
+		        	int j=i-1;
+		        	while (j>=0 && arr[j]<key) 
+					{
+		            	arr[j+1]=arr[j];
+		          	  j--;
+		        	}
+		        arr[j+1]=key;
+				}
+				printf("Mang sau khi Sap xep: \n");
+			    for(int i=0; i<n; i++)
+				{
+					printf("%d ", arr[i]);
+				}
+				printf("\n");
 			break;
 	}
 			case 8:{
