@@ -154,14 +154,8 @@ int main(){
                 }
 			break;
 	}
-			case 9:{for(int i=0;i<n;i++)
-			{
-				for(int j=0;j<n;j++){
-					if(arr[j]=arr[n]){
-						arr[j]=arr[j+1];
-						
-					}
-				}
+			case 9:{
+				printf("Lua chon 9 chua lam"); 
 			}
 			break;
 	}
