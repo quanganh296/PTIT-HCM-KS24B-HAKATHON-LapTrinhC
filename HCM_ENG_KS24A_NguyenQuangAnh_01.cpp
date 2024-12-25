@@ -183,7 +183,7 @@ dem+=tong;
 					printf("%d ", arr[i]);
 				}
 				printf("\n");
-				
+			break;	
 	}
 	case 0:{
 		break;
