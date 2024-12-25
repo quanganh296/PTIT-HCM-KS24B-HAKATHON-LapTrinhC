@@ -86,13 +86,30 @@ dem+=tong;
 			printf("\n");
 			break;
 	}
-			case 5:{ int newValue;
-                printf("Nhap gia tri can them: ");
-                scanf("%d", &newValue);
-                arr[n] = newValue;
-               n=rand()%n+1;
-                printf("Da them phan tu vao mang.\n");
-                break;
+			case 5:{ int number, pos;
+			
+				
+			    printf("Nhap gia tri phan tu: "); scanf("%d", &number);
+			    printf("Nhap vi tri muon them (0-%d): ", n-1); scanf("%d", &pos);
+			
+			    if (pos>=0 && pos<=n) 
+				{
+			        for (int i=n; i>pos; i--) 
+					{
+			            arr[i] = arr[i-1]; 
+			        }
+			        arr[pos] = number; 
+			        n++; 
+			    } else {
+			        printf("Vi tri khong ton tai!!\n");
+			    }
+			    printf("Mang sau khi them: \n");
+			    for(int i=0; i<n; i++)
+				{
+					printf("%d ", arr[i]);
+				}
+				printf("\n");
+				break;
 	}
 			case 6:{ int del;
                 printf("Nhap vi tri can xoa (0 - %d): ", n - 1);
