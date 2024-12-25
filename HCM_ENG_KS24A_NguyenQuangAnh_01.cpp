@@ -169,21 +169,21 @@ dem+=tong;
 			break;
 	}
 			case 10:{
-				for(int i=0;i<n;i++)
+			int j=0, temp;
+				for(int i=n-1; i>=j; i--)
 				{
-					for(int j=0;j<n;j++)
-					{
-						int temp=0;
 						temp=arr[j];
-						arr[j+1]=arr[j];
-						temp=arr[j+1];
-						printf("%d",arr[j]);
-						
-					}
-				
+						arr[j]=arr[i];
+						arr[i]=temp;
+						j+=1;
+				}
+				printf("\nMang sau khi dao nguoc: \n");
+			    for(int i=0; i<n; i++)
+				{
+					printf("%d ", arr[i]);
 				}
 				printf("\n");
-			break;
+				
 	}
 	case 0:{
 		break;
